@@ -1,14 +1,21 @@
-var person=Object.create(null)
-person["firstName"]="Kavya"
-person["lastName"]="Gupta"
-var cityName="city"
-person[cityName]="Boston"
+var person = Object.create(null)
 
-person.address=new Object()
-person.address.state="Brooklyn"
-person.address.country="USA"
+// 1st Way
+person["firstName"] = "Scott"
+person["lastName"] = "Desatnick"
 
-Object.defineProperty(person,"title",{value:"Great Boss"})
+var cityName = "city"
+person[cityName] ="Boston"
+
+//person["address"] = new Object()
+// 2nd Way (dot notation)
+person.address = new Object()
+
+person.address.state = "Massachusets"
+person.address.country = "USA"
+
+//3rd Way
+Object.defineProperty(person, "title", {value: "Great Boss"})
 
 console.log(person)
 console.log(person["firstName"])

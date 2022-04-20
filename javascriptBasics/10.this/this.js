@@ -1,45 +1,50 @@
-console.log(this)
+// console.log(this)
 
-function sample(){
-    console.log(this)
-}
-//using self var
+// function sample(){
+//     console.log(this)
+// }
+
 // sample()
-// window.name=""
-// var studentObj={
-//     name:"Scott",
+
+// // Using self variable
+// var studentObj = {
+//     name: "Scott", 
 //     getName: function(){
-//         var self=this;
+//         var self = this
+
 //         console.log(self)
-//         self.name="desctrick"
+//         self.name = "Desatnick"
 //         console.log(self)
 
-//         var updatedName=function(){
-//             self.name="great scott"
+//         var updateName = function(){
+//             self.name = "Great Scott"
 //             console.log(self)
 //         }
-//         updatedName()
+
+//         updateName()
 //     }
 // }
+
 // studentObj.getName()
 
-//using bind
-var studentObj={
-    name:"Scott",
+// Using Bind
+var studentObj = {
+    name: "Scott", 
     getName: function(){
-       
         console.log(this)
-        this.name="desctrick"
+        this.name = "Desatnick"
         console.log(this)
 
-        var updatedName=function(){
-            this.name="great scott"
+        var updateName = function(){
+            this.name = "Great Scott"
             console.log(this)
         }.bind(this)
-        updatedName()
-        // updatedName.call(this)
-        // updatedName.bind(this)()
-        // updatedName.apply(this)
+
+        updateName()
+        //updateName.bind(this)()
+        //updateName.call(this)
+        //updateName.apply(this)
     }
 }
+
 studentObj.getName()

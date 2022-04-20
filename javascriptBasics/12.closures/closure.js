@@ -1,9 +1,11 @@
 function sayHello(message){
-    return function(city){
-        return message+" "+city
+    var wish ="Good Luck"
+    return function (city){
+        return message + " " + city + ", " + wish
     }
 }
-var wishMe=sayHello("hello")
+
+var wishMe = sayHello("Hello")
 console.log(wishMe)
-var getMsg=wishMe('Boston')
-console.log(getMsg)
+var getMessage = wishMe("Boston")
+console.log(getMessage)

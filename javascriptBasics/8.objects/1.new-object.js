@@ -1,9 +1,4 @@
-function Student(){
-    // this.firstName = "Scott"
-    // this.lastName ="Desatnick"
-}
-
-var person = new Student()
+var person = new Object()
 // 1st Way
 person["firstName"] = "Scott"
 person["lastName"] = "Desatnick"

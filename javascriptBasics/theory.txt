@@ -118,7 +118,7 @@ Strict Typing
 -------------
 C# or java follows script typing
 
-Prmitive Types
+Primitive Types
 -----------------
 A type of data that represents a  single value is called primitive data type
 
@@ -193,8 +193,8 @@ XML
 
 JSON
 ------
-common usage of JSON is to exchange data to/from web servers
-When sending data to a webserver that data has to be string 
+1. common usage of JSON is to exchange data to/from web servers
+2. When sending data to a webserver that data has to be string 
 
 {   
     "firstname": "uma",
@@ -215,7 +215,7 @@ Anything which is JSON valid is valid in object literal
 
 JSON.stringify - converts a javascript value into seriazlied string 
 
-JSOn.parser - deserialzes a JSON String to a JSON Object
+JSON.parser - deserialzes a JSON String to a JSON Object
 
 arrays
 -------
@@ -242,12 +242,10 @@ if function is inside an object then 'this' becomes that object
 
 Closure 
 ----------
-Inner functions having access to the variables of outer functions
+Inner functions having access to the variables and parameters of outer functions
 
 Bind vs call vs apply
 -----------------------
-
-** if you pass primitive values through bind it will covert them to object type
 
 bind - sets `this` keyword and creates a copy of that function
 
@@ -260,6 +258,8 @@ apply - sets `this` keyword, similar to call but the difference is apply accepts
 
 The call, bind and apply methods can be used to set `this` keyword 
 independent of how function is called
+
+** if you pass primitive values through bind it will convert them to object type
 
 Class 
 -----
@@ -380,7 +380,8 @@ Deals with code encapsulation. It is used to create private public properties
 
 code encapsulation
 -------------------
-
-var person = function(){
-    var name =  'uma'
+function Human(){
+    var person = function(){
+        var name =  'uma'
+    }
 }

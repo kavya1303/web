@@ -1,46 +1,60 @@
-/*Function always return a avalue 
-if ypu return any value it would return thatvalue
-otherwise it will return undefined
-*/
-function getName(){
-    // return 1
-    // return "Scott" //unreachable code detected
-    // return true
-    // return null
-    // return undefined
-    // return {}
-    // return function(){}
-    //return []
-    return
-}
-//function overloading is not posiible in javascript
+// Function always returns a value
+// if you return any value it would return the same value 
+// else it would return undefined
+// function getName(){
+//   // return 1
+//   // return "Scott Desatnick"
+//   // return true
+//   // return null
+//   // return undefined
+//   // return {}
+//   // return function(){}
+//   // return []
+//   // return
+// }
 
-console.log(getName())
-function getFullName(firstName,LastName){
-    return firstName+" "+LastName
+// console.log(getName())
+
+// function getFullName(){
+//     return "Scott" + ' ' +  "Desatnick"
+// }
+
+// console.log(getFullName())
+// console.log(getFullName())
+// console.log(getFullName())
+
+// function overloading - function with different number of params
+//                        function with different type of params 
+// function overloading is not possible in javascript 
+
+function getFullName(firstName, lastName){
+    return firstName + ' ' + lastName
 }
 
-function getFullName(firstName,LastName,title){
-    return firstName+" "+LastName+" is "+title
+function getFullName(firstName, lastName, title){
+    return firstName + ' ' + lastName + ' is ' + title
 }
 function getFullName(){
-    return "No parameter at all"
+    return "No params at all"
 }
-console.log(getFullName("Kavya","Gupta","Great Boss"))
-console.log(getFullName("kavya","Gupta"))
 
-//default values
+console.log(getFullName("Scott", "Desatnick", "Great Boss"))
+console.log(getFullName("Adam", "Colson"))
+console.log(getFullName("Tuan", "Bui"))
 
-function greet(name){
-    console.log(name);
+// Deafault values
+
+function greet(name) {
+    console.log(name)
 }
-greet("Kavya")
+
+greet("Uma")
 greet()
 
-
-function add(a,b){
-    return a+b
+function add(a, b){
+    return a + b
 }
+
+console.log(add(4,5))
 console.log(add(3,4))
-console.log(add(6,4))
-console.log(add(7,1))
+console.log(add(4,6))

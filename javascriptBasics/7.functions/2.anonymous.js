@@ -1,17 +1,25 @@
-var getName=1;
-getName=function(firstName,LastName){
-    return firstName+' '+LastName
-}
-console.log(getName("kavya","gupta"))
+var getName = function (firstName, lastName){
+                    return firstName + ' '+ lastName
+              }
 
 
-var mul=function(x,y){
+console.log(getName("Scott", "Desatnick"))  
+
+var multiply = function(x, y){
     return x*y
 }
-console.log(mul(4,5))
-//NaN -not a number
 
-var getMsg=function(message){
-    return message;
+console.log(multiply(4,5))
+
+var getMessage = function(message){
+    return message
 }
-console.log(getMsg("Welcome to anonymous function"))
+
+console.log(getMessage("Welcome to anonymous functions"))
+
+var add = function addition(a, b){
+    return a + b
+}
+
+console.log(add)
+console.log(addition) // invalid

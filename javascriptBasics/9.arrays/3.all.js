@@ -1,21 +1,27 @@
-var data=[
-    1,
-    "scott",
-    true,
-    null,
-    undefined,
-    {
-        name:"scott"
-    },
-    function(name){
-        return name
-    },
-    ["blue","red","green"]
-]
+var data = [
+            1,
+            "Scott",
+            true,
+            null,
+            undefined,
+            {
+                name: "Scott"
+            },
+            function(name){
+                return name
+            },
+            ["Red", "Green", "Blue"]
+           ]
+
 console.log(data)
 
-//access function
-//pass object to this array
-//print "scott"
+// access function 
+// pass object to this array
+// print "Scott"
 console.log(data[6](data[5].name))
-console.log(data[6](data[5].name)+" likes "+data[7][0])
+
+// access function 
+// pass object to this array
+// access inner array
+// print "Scott Likes Red"
+console.log(data[6](data[5].name) + " Likes " + data[7][0])

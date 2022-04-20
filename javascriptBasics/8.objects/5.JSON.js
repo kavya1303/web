@@ -1,10 +1,14 @@
-var student={
-    "id":1,
-    "name":"Kavya gupta"
-
+var student = {
+    "firstName": "Scott",
+    "lastName": "Desatnick"
 }
+
 console.log(student, typeof student)
-studentStringify=JSON.stringify(student)
+
+// Coverting JSON Object to String
+studentStringify = JSON.stringify(student)
 console.log(studentStringify, typeof studentStringify)
-studentParse=JSON.parse(studentStringify)
+
+// converting String back to JSON Object
+studentParse = JSON.parse(studentStringify)
 console.log(studentParse, typeof studentParse)

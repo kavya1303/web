@@ -1,25 +1,34 @@
 function one(){
     return function two(){
         return function three(){
-            return "function three is called"
+            return "Function three is called"
         }
     }
 }
-var two=one()
-var three=two()
-var msg=three()
-console.log(msg)
 
-console.log(one() () ())
+// 1st Way 
+var two = one()
+var three = two()
+var message = three()
+console.log(message)
+
+// 2nd Way 
+console.log(one()()())
 
 function sample(){
-    var msg="this is a inner function"
-    var test=function(message){
-       console.log(message)
+    var message = "This is inner function"
+    var test = function(message){
+        console.log(message)
     }
-    var display=function(){
-        test(msg)
+    
+    var display = function(){
+        test(message)
     }
+
     display()
 }
+
 sample()
+
+
+

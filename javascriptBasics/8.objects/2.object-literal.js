@@ -1,15 +1,21 @@
-var person={} //object literal syntax
+var person = {} // Object Literal Syntax
 
-person["firstName"]="Kavya"
-person["lastName"]="Gupta"
-var cityName="city"
-person[cityName]="Boston"
+// 1st Way
+person["firstName"] = "Scott"
+person["lastName"] = "Desatnick"
 
-person.address=new Object()
-person.address.state="Brooklyn"
-person.address.country="USA"
+var cityName = "city"
+person[cityName] ="Boston"
 
-Object.defineProperty(person,"title",{value:"Great Boss"})
+//person["address"] = new Object()
+// 2nd Way (dot notation)
+person.address = {}
+
+person.address.state = "Massachusets"
+person.address.country = "USA"
+
+//3rd Way
+Object.defineProperty(person, "title", {value: "Great Boss"})
 
 console.log(person)
 console.log(person["firstName"])
@@ -20,19 +26,23 @@ console.log(person["cityName"])
 console.log(person.address.state)
 console.log(person.address.country)
 
-var student={
-    id:1,
-    isAdmin:true,
-    grade:undefined,
-    name:'Scott',
-    details:null,
-    getName :function(){
+
+var student = {
+    id: 1,
+    name: "Scott",
+    isAdmin : true,
+    grade: undefined,
+    details: null,
+    getname : function(){
         return this.name
     },
-    address:{},
-    subjects:["maths","physics","chemistry"]
+    address: {},
+    subjects: ["maths", "Physics", "Chemistry"]
 }
 
-student.city='Boston'
+student.city = "Boston"
 
 console.log(student)
+console.log(student.id)
+console.log(student.name)
+console.log(student.getname())
